@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -eu -o pipefail
+
+_JAVA_OPTIONS="" /Applications/Arduino.app/Contents/MacOS/Arduino --pref build.path=./build --port /dev/cu.usbmodem* --board "$1" --upload "$2"

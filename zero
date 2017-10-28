@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -eu -o pipefail
+
+./arduino arduino:samd:arduino_zero_edbg "$1"

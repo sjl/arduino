@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -eu -o pipefail
+
+./arduino arduino:sam:arduino_due_x_dbg "$1"
